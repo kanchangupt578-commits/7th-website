@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+@utility animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0A0B0D;
+}
+
+::selection {
+  background-color: rgba(99, 102, 241, 0.2);
+  color: #818cf8;
+}
+
+body {
+  color-scheme: dark;
+}
